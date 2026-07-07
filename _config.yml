@@ -2,7 +2,7 @@
 title: "My Blog"
 author: "Rens"
 description: "My blog for the ITVitae bonus track."
-baseurl: "/blogs"
-url: "https://m4u5r4n5.github.io/my-blog" 
+baseurl: "/my-blog"
+url: "https://m4u5r4n5.github.io" 
 theme: minima
 ---
