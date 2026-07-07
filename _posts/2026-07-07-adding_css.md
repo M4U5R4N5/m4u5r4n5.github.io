@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My First Blog Post"
+title: "Adding Simple CSS"
 author: "Rens"
 date: 2026-07-07
 categories: [CSS]
