@@ -1,5 +1,5 @@
 ---
 layout: default
-title: "BLOG"
+title: "My blogs"
 ---
 
