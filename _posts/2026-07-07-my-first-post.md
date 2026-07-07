@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My First Blog Post"
+title: "1. My First Blog Post"
 author: "Rens"
 date: 2026-07-07
 categories: [Git, Github, Jekyll]

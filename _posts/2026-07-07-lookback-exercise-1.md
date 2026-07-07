@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Lookback at the first exercise"
+title: "3. Lookback at the first exercise"
 author: "Rens"
 date: 2026-07-07
 categories: [Bonus track]

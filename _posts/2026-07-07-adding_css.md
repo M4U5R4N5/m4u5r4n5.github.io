@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Adding Simple CSS"
+title: "2. Adding Simple CSS"
 author: "Rens"
 date: 2026-07-07
 categories: [CSS]
