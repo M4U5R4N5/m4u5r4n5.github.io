@@ -5,7 +5,7 @@
 
 <p>What do you want to calculate?</p>
 
-<form>
+<div>
   <input type="radio" id="bit2byte" name="calcselect" value="bit2byte">
   <label for="bit2byte">From bit to byte</label><br>
   <input type="radio" id="byte2bit" name="calcselect" value="byte2bit">
@@ -13,14 +13,14 @@
   <label for="inputfield">Input:</label><br>
   <input type="text" id="inputfield" name="inputfield" maxlength=8><br><br>
   <button type="button" onclick="startCalculate()">Calculate</button><br><br>
-</form>
+</div>
 
-<form>
+<div>
   <label for="outputfield">Output:</label><br>
   <textarea readonly name="outputfield" id="outputfield" rows="2" cols="50">
   Choose what you want to calculate and press "Calculate".
   </textarea>
-</form>
+</div>
 
 <script>
 
@@ -47,6 +47,8 @@ function bit2byte(input) {
     if (input[i] === '1') {
       output += 2**count;
       console.log(i, count, output);
+    } else if (input[i] !== '0') {
+      return "Invalid input!"
     }
     count += 1;
   }
@@ -55,11 +57,12 @@ function bit2byte(input) {
 
 
 function byte2bit(input) {
-  if (input < 0 || input > 255 ) {
+  let intput = parseInt(input); 
+  if (intput < 0 || intput > 255 || isNaN(intput) ) {
     return "Invalid input, choose a value between 0 and 255!";
   }
   let count = 7;
-  let remainder = input;
+  let remainder = intput;
   let output = "";
   while (count >= 0) {
     if (remainder >= 2**count) {
